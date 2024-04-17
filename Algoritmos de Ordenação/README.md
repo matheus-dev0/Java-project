@@ -5,16 +5,16 @@
 <h2>Tipos de algoritmos</h2>
 <ul>
     <li><a href="https://github.com/theus-dev/Java/blob/main/Algoritmos%20de%20Ordena%C3%A7%C3%A3o/bubbleSort.java">Bubble Sort</a>
-    <p>Iterações com 6 casos de vetores desordenados: (Estarei utilizando um algoritmo de geração aleatória de vetores, logo os testes podem variar bastante, dado a natureza indeterminística de valores aleatórios.)</p>
+    <p>Iterações com 6 casos de vetores desordenados, com números entre 0 e 100.000: (Estarei utilizando um algoritmo de geração aleatória de vetores, logo os testes podem variar bastante, dado a natureza indeterminística de valores aleatórios.)</p>
         <ol>
-            <li>5 elementos: 6 iterações</li>
-            <li>10 elementos: 27 iterações</li>
-            <li>20 elementos: 108 iterações</li>
-            <li>35 elementos: 302 iterações</li>
-            <li>50 elementos: 535 iterações</li>
-            <li>80 elementos: 1359 iterações</li>
+            <li>5 elementos: 10 Comparações | 8 iterações</li>
+            <li>150 elementos: 11.175 Comparações | 4.956 iterações</li>
+            <li>700 elementos: 244.650 Comparações | 123.790 iterações</li>
+            <li>2000 elementos: 1.999.000 Comparações | 999.482 iterações</li>
+            <li>5000 elementos: 12.497.500 Comparações | 6.167.342 iterações</li>
+            <li>10000 elementos: 49.995.000 Comparações | 24.164.833 iterações</li>
         </ol>
-        <p>Conclusão: É um algoritmo de ordem quadrática Big(n<sup>2</sup>), portanto tende a ser ineficiente com quantidades altas de elementos.</p>
+        <p>Conclusão: O Bubble Sort é um algoritmo de ordem quadrática Big(n<sup>2</sup>), portanto tende a ser ineficiente com quantidades altas de elementos.</p>
     </li>
     
     
@@ -23,3 +23,4 @@
 <li>Insertion Sort</li>
 <li>Selection Sort</li>
 </ul>
+
