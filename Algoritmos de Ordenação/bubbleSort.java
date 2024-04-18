@@ -8,6 +8,8 @@ public class bubbleSort {
     int length = unsortedArray.length;
     // Tracking the amount of iterations for Big(O) porpuses
     int iterations = 0;
+    // Tracking the amount of comparisons, also for Big(O) porpuses
+    int comparisons = 0;
 
     // This variable is responsible for storing the smaller number to be switched
     int temporary = 0;
@@ -15,7 +17,7 @@ public class bubbleSort {
 
     for (int i = 0; i < length; i++) {
       for (int j = i + 1; j < length; j++) {
-
+        comparisons++;
         if (unsortedArray[i] > unsortedArray[j]) {
           iterations++;
 
@@ -27,26 +29,39 @@ public class bubbleSort {
       }
 
     }
+    System.out.println("Comparisons: "+ comparisons);
     System.out.println("Iterations: " + iterations);
+    
 
   }
+  //This is a way to create random array for big data testing porpuses
+  //The arguments will define the array characteristics
 
-  public static void main(String[] args) {
-
-    // This is a random array generator, you only need to change the length and
-    // maximum number in array.
-
-    int arrayLength = 25; // Change Here as desired
-    int maximumValue = 290; // Change Here as desired
+  public static int[] randomGenerator(int arrayLength, int maximumValue) {
 
     int[] unsortedArray = new int[arrayLength];
 
     Random r = new Random();
     for (int i = 0; i < arrayLength; i++) {
       unsortedArray[i] = r.nextInt(maximumValue);
-
+    
     }
+  
+    return unsortedArray;
+  }
 
+  public static void main(String[] args) {
+
+    
+    // Descomente para fazer do meio automático
+
+    int[] unsortedArray = randomGenerator(10, 200);
+
+    //Meio manual
+
+    //int[] unsortedArray = {10,9,8,7,6,5,4,3,2,1,0};
+    
+    
     System.out.println("Unsorted Array: " + Arrays.toString(unsortedArray));
     sort(unsortedArray);
 
