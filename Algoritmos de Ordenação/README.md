@@ -22,5 +22,7 @@
 <li>Merge Sort</li>
 <li>Insertion Sort</li>
 <li>Selection Sort</li>
+<li>Heap Sort</li>
+<li>Radix Sort</li>
 </ul>
 
